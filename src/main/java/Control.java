@@ -26,7 +26,7 @@ public class Control {
 	}
 	
 	public void canalDown() {
-		if (this.tv.canal != 0 && this.tv.estado==true) {
+		if (this.tv.canal != 1 && this.tv.estado==true) {
 			this.tv.canal--;
 		}
 	}
