@@ -20,7 +20,7 @@ public class Control {
 	}
 	
 	public void canalUp() {
-		if (this.tv.canal >= 120 || this.tv.canal < 0) {
+		if (this.tv.canal == 120) {
 			return;
 		}
 		else if (this.tv.estado=true){
@@ -29,7 +29,7 @@ public class Control {
 	}
 	
 	public void canalDown() {
-		if (this.tv.canal > 120 || this.tv.canal <= 0) {
+		if (this.tv.canal == 0) {
 			return;
 		}
 		else if (this.tv.estado=true){
@@ -38,7 +38,7 @@ public class Control {
 	}
 	
 	public void volumenUp() {
-		if (this.tv.volumen >= 7 || this.tv.volumen < 0) {
+		if (this.tv.volumen == 7 ) {
 			return;
 		}
 		else if (this.tv.estado=true){
@@ -47,7 +47,7 @@ public class Control {
 	}
 	
 	public void volumenDown() {
-		if (this.tv.volumen > 7 || this.tv.volumen <= 0) {
+		if (this.tv.volumen == 0) {
 			return;
 		}
 		else if (this.tv.estado=true){
@@ -56,7 +56,7 @@ public class Control {
 	}
 	
 	public void setCanal(int canal) {
-		if (0 <= canal && canal <= 120) {
+		if (1 <= canal && canal <= 120) {
 			this.tv.canal=canal;
 		} else {
 			return;
