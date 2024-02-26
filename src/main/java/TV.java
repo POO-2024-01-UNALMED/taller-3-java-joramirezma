@@ -76,7 +76,7 @@ public class TV {
 	}
 	
 	public boolean getEstado() {
-		return this.estado;
+		return estado;
 	}
 	
 	public void canalUp() {
